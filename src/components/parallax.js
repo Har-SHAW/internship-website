@@ -52,11 +52,11 @@ const Parallax = () => (
           position="0"
             from={{
               top: '10%',
-              scale: 1.5,
+              scale: 2,
             }}
             to={{
               top: '70%',
-              scale: 2,
+              scale: 3,
             }}
           >
             <h2>I am Harsha!</h2>
@@ -64,7 +64,23 @@ const Parallax = () => (
         </Timeline>
       </Scene>
     </Controller>
-    <div style={{height:"100px"}}></div>
+    
+    <div
+      style={{
+        width: "100vw",
+        backgroundColor: "white",
+        height: "100px",
+        color: "black",
+        fontSize: "30px",
+        fontWeight: "bold",
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center"
+      }}
+    >
+      My Hobbies
+    </div>
   </ParallaxStyled>
 );
 
