@@ -76,20 +76,15 @@ function App() {
                   <div className="hero-content-line-inner">by travelling.</div>
                 </div>
               </h1>
-              <p>
-                The journey changes you; it should change you. It leaves marks
-                on your memory, on your consciousness, on your heart, and on
-                your body. You take something with you. Hopefully, you leave
-                something good behind.
-              </p>
-              <div className="btn-row">
+              {/* <div className="btn-row">
                 <button className="explore-button" style={{ color: "white" }}>
                   Explore
                   <div className="arrow-icon">
                     <img src={arrow} alt="row" />
                   </div>
                 </button>
-              </div>
+              </div> */}
+              <img className="globe" src={arrow} alt="" />
             </div>
           </div>
           <div className="hero-images">

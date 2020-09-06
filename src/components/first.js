@@ -64,7 +64,7 @@ const Sticky2 = () => (
                   height: "100vh",
                   width: "0px",
                   left: "0",
-                  opacity: 1,
+                  opacity: 0,
                 }}
                 to={{
                   height: "100vh",
