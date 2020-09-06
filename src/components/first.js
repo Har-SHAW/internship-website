@@ -3,6 +3,7 @@ import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 const plane = require("./pngwave.png");
 const lifeisshort = require("../images/lifeisshort.jpg")
+const earth = require("../images/earth.png")
 
 const Sticky2 = () => (
   <div className="sticky">
@@ -25,16 +26,15 @@ const Sticky2 = () => (
                 </div>
               </Tween>
               </Timeline>
-              {/* <Timeline totalProgress={progress} paused
+               <Timeline totalProgress={progress} paused
                 target={
-                  <div className="heading">
-                    <h2>I Love to travel a lot</h2>
-                  </div>
+                  <img src={earth} alt="" style={{height:"300px", width: "300px"}}>
+                  </img>
                 }
               >
-                <Tween from={{ opacity: 0, scale:0 }} to={{ opacity: 1 ,x: "55%", scale:1}} />
+                <Tween from={{ opacity: 0, x: "50vw", y: "10vh" }} to={{ opacity: 1,x:"80vw", y:"50vh"}} />
               
-            </Timeline> */}
+            </Timeline> 
             <Timeline
               totalProgress={progress}
               paused
@@ -46,14 +46,14 @@ const Sticky2 = () => (
                     top: "50%",
                     height: "100px",
                     width: "100px",
-                    backgroundColor: "orange",
+                    backgroundColor: "transparent",
                     overflow: "hidden",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
                   }}
                   src={lifeisshort}
-                  alt="lifeisshort"
+                  alt=""
                 />
               }
             >
