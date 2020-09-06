@@ -2,7 +2,7 @@ import React from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
 import Home from "./home";
-const plane = require("./pngwave.png");
+const plane = require("../images/pngwave.png");
 const lifeisshort = require("../images/lifeisshort.jpg");
 const earth = require("../images/earth.png");
 

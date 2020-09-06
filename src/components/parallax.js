@@ -67,7 +67,7 @@ const Parallax = () => (
     
     <div
       style={{
-        width: "100vw",
+        width: "100%",
         backgroundColor: "white",
         height: "100px",
         color: "black",
