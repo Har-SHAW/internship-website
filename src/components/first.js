@@ -62,7 +62,7 @@ const Sticky2 = () => (
               <Tween
                 from={{
                   height: "100vh",
-                  width: "0px",
+                  width: "800px",
                   left: "0",
                   opacity: 0,
                 }}

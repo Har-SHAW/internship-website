@@ -173,8 +173,8 @@ const Sticky2 = () => (
               }
             >
               <Tween
-                from={{ bottom: "0px", opacity: 0 }}
-                to={{ bottom: "50vh", opacity: 1 }}
+                from={{ bottom: "0px", opacity: 0 ,color:"white"}}
+                to={{ bottom: "50vh", opacity: 1 ,color:"black"}}
               />
             </Timeline>
           </div>
