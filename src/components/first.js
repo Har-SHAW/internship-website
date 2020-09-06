@@ -58,15 +58,14 @@ const Sticky2 = () => (
               }
             >
               <Tween
-                from={{ height:"0px", width:"0px",left: "90%", top: "50%", opacity: 0}}
-                to={{ height:"100vh",width:"800px",left: "0",top:"0", opacity: 1}}
+                from={{ height:"0px", width:"0px",left: "90%", top: "50%", opacity: 0,borderRadius:"100%"}}
+                to={{ height:"100vh",width:"800px",left: "0",top:"0", opacity: 1,borderRadius:"0%"}}
               />
             </Timeline>
           </div>
         )}
       </Scene>
     </Controller>
-    <div style={{height:"100px"}}></div>
   </div>
 );
 
