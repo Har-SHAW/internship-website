@@ -148,6 +148,35 @@ const Sticky2 = () => (
                 ></div>
               </Tween>
             </Timeline>
+            <Timeline
+              totalProgress={progress}
+              paused
+              target={
+                <div
+                  style={{
+                    position: "absolute",
+                    color: "black",
+                    width: "100vw",
+                    textAlign: "center",
+                    fontWeight: "bold",
+                    fontSize: "60px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center"
+                  }}
+                >
+                  <div style={{width:"60vw", textAlign: "center"}}>
+                    Hello there!, This is a sample web page we can put any
+                    content here
+                  </div>
+                </div>
+              }
+            >
+              <Tween
+                from={{ bottom: "0px", opacity: 0 }}
+                to={{ bottom: "50vh", opacity: 1 }}
+              />
+            </Timeline>
           </div>
         )}
       </Scene>

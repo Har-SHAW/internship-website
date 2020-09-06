@@ -19,7 +19,7 @@ const Sticky2 = () => (
                 from={{ x: "5%", top: "30%" }}
                 to={{ x: "60%", top: "5%" }}
               >
-                <div className="animation">
+                <div className="animation" style={{zIndex: 9}}>
                   <img
                     style={{ width: "500px", height: "500px" }}
                     src={plane}
@@ -51,15 +51,8 @@ const Sticky2 = () => (
                 <img
                   style={{
                     position: "absolute",
-                    left: "50%",
-                    top: "50%",
-                    height: "100px",
-                    width: "100px",
                     backgroundColor: "transparent",
                     overflow: "hidden",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
                   }}
                   src={lifeisshort}
                   alt=""
@@ -68,20 +61,16 @@ const Sticky2 = () => (
             >
               <Tween
                 from={{
-                  height: "0px",
+                  height: "100vh",
                   width: "0px",
-                  left: "90%",
-                  top: "50%",
+                  left: "0",
                   opacity: 0,
-                  borderRadius: "100%",
                 }}
                 to={{
                   height: "100vh",
                   width: "800px",
                   left: "0",
-                  top: "0",
                   opacity: 1,
-                  borderRadius: "0%",
                 }}
               />
             </Timeline>
