@@ -4,9 +4,6 @@ import { Tween, Timeline } from "react-gsap";
 
 const Sticky2 = () => (
   <div className="sticky">
-    <div
-      style={{ height: "100vh", width: "100vw", background: "transparent" }}
-    />
     <Controller>
       <Scene triggerHook="0" duration={1300} pin>
         {(progress) => (

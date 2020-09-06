@@ -1,13 +1,15 @@
 import React from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import { Tween, Timeline } from "react-gsap";
+import Home from "./home";
 const plane = require("./pngwave.png");
-const lifeisshort = require("../images/lifeisshort.jpg")
-const earth = require("../images/earth.png")
+const lifeisshort = require("../images/lifeisshort.jpg");
+const earth = require("../images/earth.png");
 
 const Sticky2 = () => (
   <div className="sticky">
-    <div style={{height: "100vh", width: "100vw", background: "transparent"}} />
+    {/* <div style={{height: "100vh", width: "100vw", background: "transparent"}} /> */}
+    <Home />
     <Controller>
       <Scene triggerHook="0" duration={1300} pin>
         {(progress) => (
@@ -25,16 +27,23 @@ const Sticky2 = () => (
                   />
                 </div>
               </Tween>
-              </Timeline>
-               <Timeline totalProgress={progress} paused
-                target={
-                  <img src={earth} alt="" style={{height:"300px", width: "300px"}}>
-                  </img>
-                }
-              >
-                <Tween from={{ opacity: 0, x: "50vw", y: "10vh" }} to={{ opacity: 1,x:"80vw", y:"50vh"}} />
-              
-            </Timeline> 
+            </Timeline>
+            <Timeline
+              totalProgress={progress}
+              paused
+              target={
+                <img
+                  src={earth}
+                  alt=""
+                  style={{ height: "300px", width: "300px" }}
+                ></img>
+              }
+            >
+              <Tween
+                from={{ opacity: 0, x: "50vw", y: "10vh" }}
+                to={{ opacity: 1, x: "80vw", y: "50vh" }}
+              />
+            </Timeline>
             <Timeline
               totalProgress={progress}
               paused
@@ -58,8 +67,22 @@ const Sticky2 = () => (
               }
             >
               <Tween
-                from={{ height:"0px", width:"0px",left: "90%", top: "50%", opacity: 0,borderRadius:"100%"}}
-                to={{ height:"100vh",width:"800px",left: "0",top:"0", opacity: 1,borderRadius:"0%"}}
+                from={{
+                  height: "0px",
+                  width: "0px",
+                  left: "90%",
+                  top: "50%",
+                  opacity: 0,
+                  borderRadius: "100%",
+                }}
+                to={{
+                  height: "100vh",
+                  width: "800px",
+                  left: "0",
+                  top: "0",
+                  opacity: 1,
+                  borderRadius: "0%",
+                }}
               />
             </Timeline>
           </div>
